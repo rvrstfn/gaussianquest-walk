@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>GaussianQuest Walk</title>
+    <style>
+        html, body { margin: 0; height: 100%; overflow: hidden; background: #000; font-family: system-ui, sans-serif; }
+        canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+        #ui {
+            position: absolute; left: 16px; top: 16px; max-width: 360px; padding: 16px 18px;
+            border-radius: 12px; background: rgba(10, 14, 20, 0.78); color: #e8eef5; line-height: 1.45;
+        }
+        #ui h1 { margin: 0 0 6px; font-size: 18px; }
+        #ui p { margin: 6px 0; font-size: 13px; color: #b9c4d0; }
+        #status { font-size: 13px; color: #9fd3a7; min-height: 1.4em; }
+        #enter {
+            margin: 10px 0 4px; width: 100%; padding: 14px; border: 0; border-radius: 10px;
+            background: #3a7bd5; color: #fff; font-size: 17px; font-weight: 600; cursor: pointer;
+        }
+        #enter:disabled { background: #44505c; cursor: default; }
+        #worlds { margin: 4px 0 8px; font-size: 14px; }
+        #worlds a { color: #9cc4f0; margin-right: 12px; text-decoration: none; }
+        #worlds a.on { color: #fff; font-weight: 600; text-decoration: underline; }
+        kbd { padding: 0 4px; border-radius: 3px; background: #26303b; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <canvas id="app"></canvas>
+    <div id="ui">
+        <h1>GaussianQuest Walk</h1>
+        <div id="worlds"><a href="?world=meadow" id="w-meadow">Meadow</a><a href="?world=alpine" id="w-alpine">Alps</a></div>
+        <div id="status">Loading…</div>
+        <button id="enter" disabled>Enter VR</button>
+        <p><b>Quest:</b> left stick walk (click to run) · right stick ←→ turn, ↑↓ time of day ·
+            A next time of day · Y play/pause day cycle · hold right grip and point to place the sun ·
+            B relight on/off · right trigger splat sharpness · left grip sound on/off · left trigger lantern on/off · X back to start</p>
+        <p><b>Desktop:</b> click to look · <kbd>WASD</kbd> walk · <kbd>Shift</kbd> run ·
+            <kbd>Q</kbd>/<kbd>E</kbd> time of day · <kbd>1</kbd>–<kbd>4</kbd> morning, noon, golden hour, night ·
+            <kbd>P</kbd> play/pause · hold right mouse to place the sun · <kbd>L</kbd> relight on/off · <kbd>K</kbd> splat sharpness · <kbd>M</kbd> sound on/off</p>
+    </div>
+    <script>document.getElementById(new URLSearchParams(location.search).get('world') === 'alpine' ? 'w-alpine' : 'w-meadow').className = 'on';</script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

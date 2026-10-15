@@ -1,0 +1,9 @@
+aerial_grass_rock_2k.jpg  "Aerial Grass Rock" by Rob Tuytel, Poly Haven (https://polyhaven.com/a/aerial_grass_rock)
+grass_path_2_1k.jpg       "Grass Path 2" by Rob Tuytel, Poly Haven (https://polyhaven.com/a/grass_path_2)
+
+aerial_grass_rock_disp_1k.png, grass_path_2_disp_1k.png: the displacement maps of the two photos above
+
+All CC0 1.0 (public domain): https://polyhaven.com/license
+bark_willow_02_diff_1k.jpg, bark_willow_02_disp_1k.png  "Bark Willow 02" by Charlotte Baglioni, Poly Haven (https://polyhaven.com/a/bark_willow_02), CC0 1.0
+marble_cliff_03_diff_1k.jpg, marble_cliff_03_disp_1k.png  "Marble Cliff 03" by Amal Kumar, Poly Haven (https://polyhaven.com/a/marble_cliff_03), CC0 1.0
+river_small_rocks_diff_1k.jpg, river_small_rocks_disp_1k.png  "River Small Rocks" by Rob Tuytel and Rico Cilliers, Poly Haven (https://polyhaven.com/a/river_small_rocks), CC0 1.0

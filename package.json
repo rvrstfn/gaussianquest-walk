@@ -1,0 +1,17 @@
+{
+  "name": "gaussianquest-walk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "playcanvas": "2.22.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0",
+    "vite": "7.1.5"
+  }
+}
